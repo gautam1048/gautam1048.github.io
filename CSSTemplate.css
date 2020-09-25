@@ -1,0 +1,355 @@
+/* ------------------------------------------------------
+  Stylesheet Guide
+  ------------------------------------------------------
+
+    */
+
+/*Styling is structured around global and per page styling
+    general body, page, nav-bar, and footer properties that are 
+    consistent throughout the sites are located under global styles*/
+
+/*The styling of the content that is specific to a page is in its 
+    respective style section. EG images in index file are under index,
+    table styling is under schedule section, and the form styling is under
+    the contact section*/
+
+
+
+/*GLOBAL STYLES*/
+
+    @font-face {
+                    font-family: "Open Sans";
+                    font-weight: normal;
+                    font-style: normal;
+                    src: url("../fonts/Open-Sans/OpenSans-Regular.eot");
+                    src: url("../fonts/Open-Sans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Open-Sans/OpenSans-Regular.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-Regular.ttf") format("truetype");
+                }
+    @import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Berkshire+Swash&display=swap');
+    body {
+        font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 90%;
+        color: #666;
+        background-color: #016a86;}
+
+    #page {
+        max-width: 940px;
+        min-width: 720px;
+        margin: 10px auto 10px auto;
+        
+        border: 4px  #000;
+        background-color: #f6f4e8;
+        vertical-align: baseline;
+    }
+    .center-text {
+        text-align: center;
+    }
+    h1.center-text{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 550%;
+    }
+}
+        /*nav bar styles*/
+    .menu-holder {
+        float: right;
+        max-width: 80%;
+        position: fixed;
+        text-align: center;
+        height: 100%;
+        background-color: #ffffff;
+        right: -100%;
+        top: 0;
+        transition: right .3s ease;
+        width: 100%;
+        overflow: auto;
+        max-width: 100%;
+        z-index: 99;
+            } 
+    
+        /*General list styles*/
+    li {
+        list-style-image: url("images/icon-plus.png");
+        line-height: 1.6em;}
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+            }
+
+    ul li {
+        display: inline;
+        padding: 10px;
+        float: right;
+    }
+
+    ul li a, 
+    ul a :hover, 
+    ul li a:focus, 
+    ul li a:active {
+        border: none;
+        text-decoration: none;
+        color: inherit;
+    }
+
+        /*Footer styles*/
+    .smlogo{
+        height: 21.3px;
+        width: 17px;
+        margin: auto;
+    }    
+    footer{
+        text-align: center;
+    }
+    
+
+/*INDEX FILE specific styles*/
+    
+    .center-mid-1{
+        width: 940px;
+        background-color: #BEB594;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        }
+        
+        /*Image styling*/
+    .img-1{
+        margin: auto;
+        width: 100%;
+    }
+    .img-2{
+        margin: auto;
+        width: 30%;
+    }
+    .img-2[src *="sea"]{
+        padding: 0px 0px 0px 5px;
+    }
+    .img-2[src *= "sco"]{
+        padding: 0px 0px 0px 5px;
+    }
+        
+
+ /*CONTACT FILE specific styles*/
+    .center-mid-3{
+        width: 940px;
+        background-color: #dee1e5;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        }
+    .center-3{
+        width: 300px;
+        margin: 0 0;
+        }
+        
+        /*Form styling*/
+    fieldset {
+        width: 310px;
+        margin-top: 10px;
+        border: 1px solid #d6d6d6;
+        background-color: #ffffff;
+        line-height: 1.9em;
+        }
+    
+    legend {
+        font-style: italic;
+        color: #666666;
+        }
+    form{
+        width: 400px;
+        display: inline-block;
+        margin: auto;
+    }
+    
+    input[type="text"] {
+        width: 120px;
+        border: 1px solid #d6d6d6;
+        padding: 2px;
+        outline: none;}
+    input[type="text"]:focus,
+    input[type="text"]:hover {
+        background-color: #d0e2f0;
+        border: 1px solid #999999;}
+    input[type="submit"] {
+        border: 1px solid #006633;
+        background-color: #009966;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 10px;}
+    input[type="submit"]:hover {
+        border: 1px solid #006633;
+        background-color: #00CC33;
+        color: #ffffff;
+        cursor: pointer;}
+    .title {
+        float: left;
+        width: 160px;
+        clear: left;}
+    .submit {
+        width: 310px;
+        text-align: right;
+        margin-bottom: 5px;}
+
+
+
+/*SCHEDULE FILE specific styles*/
+    .center-mid-2{
+        width: 940px;
+        background-color: #efeae6;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        }
+    .center-2{
+        width: 940px;
+        margin: auto;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        }
+    .center-2>h1, .center-2>p{
+        text-align: center;
+    }  
+        
+        /*Table styling (also applies on PROJECTS page)*/
+    table {
+        border-spacing: 0px;
+    }
+    th, td {
+        padding: 5px 30px 5px 10px;
+        border-spacing: 0px;
+        font-size: 90%;
+        margin: 0px;}
+    th, td {
+        text-align: left;
+        background-color: #7acce2;
+        border-top: 1px solid #f1f8fe;
+        border-bottom: 1px solid #cbd2d8;
+        border-right: 1px solid #cbd2d8;}
+    tr.head th {
+        color: #fff;
+        background-color: #93dbec;
+        border-bottom: 2px solid #547ca0;
+        border-right: 1px solid #749abe;
+        border-top: 1px solid #90b4d6;
+        text-align: center;
+        text-shadow: -1px -1px 1px #666666;
+        letter-spacing: 0.15em;}
+    td {
+        text-shadow: 1px 1px 1px #ffffff;}
+    tr.even td, tr.even th {
+        background-color: #e8eff5;}
+    tr.head th:first-child {
+        /* WebKit is a browser engine used in Apple's Safari browser, Amazon 
+            Kindle e-book reader, BlackBerry Browser in OS 6 and above.
+
+            Not all CSS3 properties work well in all browsers. In a way to ensure that web pages display as expected in their browsers, vendors like Mozilla and Webkit developed their own browser-compatible properties. With CSS3, many compatibility issues are now resolved.
+            However, it is not unusual to still see these properties used in stylesheets. */
+
+        /* Webkit property*/
+        -webkit-border-top-left-radius: 5px;
+
+        /* Mozilla property*/
+        -moz-border-radius-topleft: 5px;
+
+        /* CSS3 property*/
+        border-top-left-radius: 5px;
+
+        /* More on border-radius property: https://www.the-art-of-web.com/css/border-radius/ */
+    }
+    tr.head th:last-child {
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-right-radius: 5px;}
+
+/*PROJECTS FILE specific styles*/
+    .center-mid-4{
+        width: 940px;
+        background-color: #dee1e5;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        }
+    .center-4{
+        width: 940px;
+        margin: auto;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        }
+    .center-4>h1, .center-4>p{
+        text-align: center;
+    }  
+    .center-mid-5{
+        width: 940px;
+        background-color: #BEB594;
+        padding-bottom: 15px;
+        padding-top: 5px;
+        }
+    /*Styles for project gallery*/
+    video{
+        width: 940px;
+    }
+    .img-3{
+        margin: auto;
+        width: 100%;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		/* ------------------------------------------------------
+            1.1.2. Text font - XXX
+        ------------------------------------------------------ */
+
+    /* ------------------------------------------------------
+        1.2. General styles
+    ------------------------------------------------------ */
+
+    /* ------------------------------------------------------
+        1.3. Color scheme
+    ------------------------------------------------------ */
+
+        /* ------------------------------------------------------
+            1.3.1. Blue (#4aa8fa) - Color scheme
+        ------------------------------------------------------ */
+
+        /* ------------------------------------------------------
+            1.3.2. Pink (#fa5a88) - Color scheme
+        ------------------------------------------------------ */
+
+        /* ------------------------------------------------------
+            1.3.2. Green (#) - Color scheme
+        ------------------------------------------------------ */
+
+    /* ------------------------------------------------------
+        1.4. Typography
+    ------------------------------------------------------ */
+
+    /* ------------------------------------------------------
+        1.5. Custom Class
+    ------------------------------------------------------ */
+
+    /* ------------------------------------------------------
+        1.6. Icons Class
+    ------------------------------------------------------ */
+
+/* ------------------------------------------------------
+    2. Header
+------------------------------------------------------ */
+
